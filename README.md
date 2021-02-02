@@ -1,6 +1,9 @@
-# livecoding-beyond-hexagonal-architecture
-The code for the live coding session of our Beyond Hexagonal Architecture talk.
+# BEYOND HEXAGONAL ARCHITECTURE
+The support of our live coding session (made at __[Virtual DDD](https://twitter.com/virtualDDD)__, February 2nd, 2021)
 
+Thanks to [Kenny](https://twitter.com/kenny_baas/) & [Krisztina](https://twitter.com/YellowBrickC/) for their warm welcome!
+
+![Beyond](./Beyond.JPG)
 
 ## Slides
 https://fr.slideshare.net/ThomasPierrain/beyond-hexagonal-architecture
