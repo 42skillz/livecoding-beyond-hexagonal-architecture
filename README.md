@@ -1,12 +1,17 @@
 # BEYOND HEXAGONAL ARCHITECTURE
 The support of our live coding session (made at __[Virtual DDD](https://twitter.com/virtualDDD)__, February 2nd, 2021)
 
-Thanks to [Kenny](https://twitter.com/kenny_baas/) & [Krisztina](https://twitter.com/YellowBrickC/) for their warm welcome!
+Thanks to __[Kenny](https://twitter.com/kenny_baas/)__ & __[Krisztina](https://twitter.com/YellowBrickC/)__ for their warm welcome!
 
 ![Beyond](./Beyond.JPG)
 
-## Slides
+## All slides are available here:
 https://fr.slideshare.net/ThomasPierrain/beyond-hexagonal-architecture
+
+## Video of the talk
+
+![yt](./yt.JPG)
+https://www.youtube.com/watch?v=SAjsP2igBNk&feature=youtu.be
 
 --- 
 
