@@ -8,7 +8,7 @@ using SeatsSuggestions.Domain.Ports;
 namespace SeatsSuggestions.Api.Controllers
 {
     /// <summary>
-    ///     Web controller acting as a left-side Adapter of a Hexagonal Architecture.
+    ///     Web controller acting as the Imperative Shell for our Suggestions use case.
     /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
