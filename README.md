@@ -10,8 +10,10 @@ https://fr.slideshare.net/ThomasPierrain/beyond-hexagonal-architecture
 
 ## Video of the talk
 
+
 ![yt](./yt.JPG)
-https://www.youtube.com/watch?v=SAjsP2igBNk&feature=youtu.be
+
+__>>>__ https://www.youtube.com/watch?v=SAjsP2igBNk&feature=youtu.be  __<<<__
 
 --- 
 
