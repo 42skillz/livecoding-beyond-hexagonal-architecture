@@ -1,0 +1,393 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Dev\dddeu-workshop-from-problem-space-to-solution-space-\TheaterSuggestions\CSharp\SeatReservations.Api\SeatReservations.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>.\SeatReservations.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\SeatReservations.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\1-Ford Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\1-Ford Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\13-Paris Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\13-Paris Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-(6)(2)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-(6)(2)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\20-Wang Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\20-Wang Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\5-Madison Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\5-Madison Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\7-Madison Theater-(6)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\7-Madison Theater-(6)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-(2)(0)_theater.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-(2)(0)_booked_seats.json" />
+    <_ContentIncludedByDefault Remove="..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-(2)(0)_theater.json" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\1-Ford Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\1-Ford Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\1-Ford Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\1-Ford Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\13-Paris Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\13-Paris Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\13-Paris Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\13-Paris Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-(6)(0)_theater.json" Link="AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-(6)(2)_booked_seats.json" Link="AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-(6)(2)_theater.json" Link="AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\20-Wang Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\20-Wang Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\20-Wang Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\20-Wang Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\5-Madison Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\5-Madison Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\5-Madison Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\5-Madison Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\7-Madison Theater-(6)(0)_booked_seats.json" Link="AuditoriumLayouts\7-Madison Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\7-Madison Theater-(6)(0)_theater.json" Link="AuditoriumLayouts\7-Madison Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-(2)(0)_booked_seats.json" Link="AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-(2)(0)_theater.json" Link="AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SeatReservations.Api.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AuditoriumLayouts\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ApiExplorer" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.0.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalDependencies\ExternalDependencies.csproj" />
+    <ProjectReference Include="..\SeatsSuggestions.Domain\SeatsSuggestions.Domain.csproj" />
+    <ProjectReference Include="..\SeatsSuggestions.Infra\SeatsSuggestions.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\1-Ford Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\1-Ford Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\1-Ford Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\1-Ford Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\10-Bouffes Parisiens Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\11-Edouard VII Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\12-Antoine Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\13-Paris Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\13-Paris Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\13-Paris Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\13-Paris Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\14-Ranelagh Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\15-Folies Begère Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\16-Palais-Royal Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\17-Lincoln Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_theater.json" Link="AuditoriumLayouts\18-New Amsterdam-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\19-Broadway Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_booked_seats.json" Link="AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_theater.json" Link="AuditoriumLayouts\2-Colorado Theater Guild-%286%29%282%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\20-Wang Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\20-Wang Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\20-Wang Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\20-Wang Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\21-Huntington Avenue Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\22-Orpheum Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\23-Quincy Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\24-Paramount  Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\3-Dock Street Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\4-Walnut Street Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\5-Madison Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\5-Madison Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\5-Madison Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\5-Madison Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\6-Opera House Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\7-Madison Theater-%286%29%280%29_booked_seats.json" Link="AuditoriumLayouts\7-Madison Theater-%286%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\7-Madison Theater-%286%29%280%29_theater.json" Link="AuditoriumLayouts\7-Madison Theater-%286%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\8-New Amsterdam Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_booked_seats.json" Link="AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_booked_seats.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Update="..\..\..\Stubs\AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_theater.json" Link="AuditoriumLayouts\9-Mogador Theater-%282%29%280%29_theater.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

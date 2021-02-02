@@ -1,0 +1,7 @@
+﻿<ProjectConfiguration>
+  <Settings>
+    <AdditionalFilesToIncludeForProject />
+    <RunPostBuildEvents>False</RunPostBuildEvents>
+    <RunPreBuildEvents>False</RunPreBuildEvents>
+  </Settings>
+</ProjectConfiguration>

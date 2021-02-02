@@ -1,0 +1,257 @@
+{
+  "Rows": {
+    "A": [
+      {
+        "Name": "A1",
+        "Category": 2
+      },
+      {
+        "Name": "A2",
+        "Category": 2
+      },
+      {
+        "Name": "A3",
+        "Category": 1
+      },
+      {
+        "Name": "A4",
+        "Category": 1
+      },
+      {
+        "Name": "A5",
+        "Category": 1
+      },
+      {
+        "Name": "A6",
+        "Category": 1
+      },
+      {
+        "Name": "A7",
+        "Category": 1
+      },
+      {
+        "Name": "A8",
+        "Category": 1
+      },
+      {
+        "Name": "A9",
+        "Category": 2
+      },
+      {
+        "Name": "A10",
+        "Category": 2
+      }
+    ],
+    "B": [
+      {
+        "Name": "B1",
+        "Category": 2
+      },
+      {
+        "Name": "B2",
+        "Category": 2
+      },
+      {
+        "Name": "B3",
+        "Category": 1
+      },
+      {
+        "Name": "B4",
+        "Category": 1
+      },
+      {
+        "Name": "B5",
+        "Category": 1
+      },
+      {
+        "Name": "B6",
+        "Category": 1
+      },
+      {
+        "Name": "B7",
+        "Category": 1
+      },
+      {
+        "Name": "B8",
+        "Category": 1
+      },
+      {
+        "Name": "B9",
+        "Category": 2
+      },
+      {
+        "Name": "B10",
+        "Category": 2
+      }
+    ],
+    "C": [
+      {
+        "Name": "C1",
+        "Category": 2
+      },
+      {
+        "Name": "C2",
+        "Category": 2
+      },
+      {
+        "Name": "C3",
+        "Category": 2
+      },
+      {
+        "Name": "C4",
+        "Category": 2
+      },
+      {
+        "Name": "C5",
+        "Category": 2
+      },
+      {
+        "Name": "C6",
+        "Category": 2
+      },
+      {
+        "Name": "C7",
+        "Category": 2
+      },
+      {
+        "Name": "C8",
+        "Category": 2
+      },
+      {
+        "Name": "C9",
+        "Category": 2
+      },
+      {
+        "Name": "C10",
+        "Category": 2
+      }
+    ],
+    "D": [
+      {
+        "Name": "D1",
+        "Category": 2
+      },
+      {
+        "Name": "D2",
+        "Category": 2
+      },
+      {
+        "Name": "D3",
+        "Category": 2
+      },
+      {
+        "Name": "D4",
+        "Category": 2
+      },
+      {
+        "Name": "D5",
+        "Category": 2
+      },
+      {
+        "Name": "D6",
+        "Category": 2
+      },
+      {
+        "Name": "D7",
+        "Category": 2
+      },
+      {
+        "Name": "D8",
+        "Category": 2
+      },
+      {
+        "Name": "D9",
+        "Category": 2
+      },
+      {
+        "Name": "D10",
+        "Category": 2
+      }
+    ],
+    "E": [
+      {
+        "Name": "E1",
+        "Category": 3
+      },
+      {
+        "Name": "E2",
+        "Category": 3
+      },
+      {
+        "Name": "E3",
+        "Category": 3
+      },
+      {
+        "Name": "E4",
+        "Category": 3
+      },
+      {
+        "Name": "E5",
+        "Category": 3
+      },
+      {
+        "Name": "E6",
+        "Category": 3
+      },
+      {
+        "Name": "E7",
+        "Category": 3
+      },
+      {
+        "Name": "E8",
+        "Category": 3
+      },
+      {
+        "Name": "E9",
+        "Category": 3
+      },
+      {
+        "Name": "E10",
+        "Category": 3
+      }
+    ],
+    "F": [
+      {
+        "Name": "F1",
+        "Category": 3
+      },
+      {
+        "Name": "F2",
+        "Category": 3
+      },
+      {
+        "Name": "F3",
+        "Category": 3
+      },
+      {
+        "Name": "F4",
+        "Category": 3
+      },
+      {
+        "Name": "F5",
+        "Category": 3
+      },
+      {
+        "Name": "F6",
+        "Category": 3
+      },
+      {
+        "Name": "F7",
+        "Category": 3
+      },
+      {
+        "Name": "F8",
+        "Category": 3
+      },
+      {
+        "Name": "F9",
+        "Category": 3
+      },
+      {
+        "Name": "F10",
+        "Category": 3
+      }
+    ]
+  },
+  "Corridors": []
+}
