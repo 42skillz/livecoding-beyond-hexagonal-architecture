@@ -60,4 +60,4 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/functi
 
 ## REFERENCES
 
-![someReferences](./someReferences.png)
+![someReferences](./someReferences.JPG)
