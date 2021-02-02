@@ -5,9 +5,13 @@ The code for the live coding session of our Beyond Hexagonal Architecture talk.
 ## Slides
 https://fr.slideshare.net/ThomasPierrain/beyond-hexagonal-architecture
 
+![HexagonalOrNot](./HexagonalOrNot.JPG)
+
 --- 
 
-## Hexagonal Architecture version
+## HEXAGONAL ARCHITECTURE VERSION
+
+![Hexa-WrapUp](./Hexa-WrapUp.png)
 
 ### Acceptance tests (Outside-in diamond style)
 https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/hexagonal/SeatsSuggestions/TheaterSuggestions.Tests/AcceptanceTests/SeatsSuggestionsControllerShould.cs
@@ -20,7 +24,9 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/hexago
 
 ---
 
-## Functional Core
+## FUNCTIONAL CORE VERSION
+
+![Core-WrapUp](./Core-WrapUp.png)
 
 ### The Functional core (SeatAllocator)
 https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/functional-core/SeatsSuggestions/SeatsSuggestions.Domain/SeatAllocator.cs
