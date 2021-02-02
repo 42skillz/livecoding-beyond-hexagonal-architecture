@@ -35,6 +35,13 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/hexago
 
 (The answer of the audience was YES (91%))
 
+### Thomas says
+![yes](./ISayYes.JPG)
+
+#### Detailled version
+___http://tpierrain.blogspot.com/2020/11/hexagonal-or-not-hexagonal.html___
+
+
 ---
 
 ## FUNCTIONAL CORE VERSION
@@ -49,3 +56,8 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/functi
 https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/functional-core/SeatsSuggestions/SeatsSuggestions.Api/Controllers/SeatsSuggestionsController.cs
 
 
+---
+
+## REFERENCES
+
+![someReferences](./someReferences.png)
