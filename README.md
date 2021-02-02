@@ -8,8 +8,6 @@ Thanks to [Kenny](https://twitter.com/kenny_baas/) & [Krisztina](https://twitter
 ## Slides
 https://fr.slideshare.net/ThomasPierrain/beyond-hexagonal-architecture
 
-![HexagonalOrNot](./HexagonalOrNot.JPG)
-
 --- 
 
 ## HEXAGONAL ARCHITECTURE VERSION
@@ -24,6 +22,11 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/hexago
 
 ### The left-side port (WebController)
 https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/hexagonal/SeatsSuggestions/SeatsSuggestions.Api/Controllers/SeatsSuggestionsController.cs
+
+### We have a question for you
+![HexagonalOrNot](./HexagonalOrNot.JPG)
+
+(The answer of the audience was YES (91%))
 
 ---
 
