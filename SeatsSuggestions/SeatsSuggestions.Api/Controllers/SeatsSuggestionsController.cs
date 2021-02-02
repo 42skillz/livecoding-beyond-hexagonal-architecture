@@ -36,7 +36,9 @@ namespace SeatsSuggestions.Api.Controllers
             var auditoriumSeating = await _auditoriumSeatingProvider.GetAuditoriumSeating(id);
 
             // pure function (the core)
-            var suggestions = SeatAllocator.MakeSuggestions(id, partyRequested, auditoriumSeating);
+            var suggestions = SeatAllocator
+                .TryMakeSuggestions(id, partyRequested, auditoriumSeating)
+                    .GetValueOrFallback(new SuggestionNotAvailable(id, partyRequested));
 
             // Domain => Infra
             return new OkObjectResult(suggestions /*JsonConvert.SerializeObject(suggestions, Formatting.Indented)*/);
