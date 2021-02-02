@@ -61,3 +61,13 @@ https://github.com/42skillz/livecoding-beyond-hexagonal-architecture/blob/functi
 ## REFERENCES
 
 ![someReferences](./someReferences.JPG)
+
+- __[Functional Core, Imperative Shell –  Gary Bernhardt](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell)__
+
+- __[Functional Core - Jérémie Chassaing](https://thinkbeforecoding.com/post/2018/01/25/functional-core)__
+
+- __[The Maybe functor - Mark Seemann](https://blog.ploeh.dk/2018/03/26/the-maybe-functor/)__
+
+- __[Hexagonal or not hexagonal? – Thomas Pierrain](http://tpierrain.blogspot.com/2020/11/hexagonal-or-not-hexagonal.html
+)__
+
