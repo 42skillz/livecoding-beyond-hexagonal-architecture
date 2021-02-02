@@ -22,9 +22,9 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             const string showId = "1";
             const int partyRequested = 1;
 
-            var leftSideAdapter = new HexagonBuilder()
+            var leftSideAdapter = new ImperativeShellBuilder()
                 .WithAuditoriumDefinedForShow(showId, "1-Ford Theater-(2)(0)_theater.json", "1-Ford Theater-(2)(0)_booked_seats.json")
-                .BuildHexagonWithAdaptersButWithoutIOs();
+                .BuildImperativeShellWithAdaptersButWithoutIOs();
 
             // ACT
             var response = await leftSideAdapter.GetSuggestionsFor(showId, partyRequested);
@@ -42,9 +42,9 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             const string showId = "5";
             const int partyRequested = 1;
 
-            var leftSideAdapter = new HexagonBuilder()
+            var leftSideAdapter = new ImperativeShellBuilder()
                 .WithAuditoriumDefinedForShow(showId, "5-Madison Theater-(2)(0)_theater.json", "5-Madison Theater-(2)(0)_booked_seats.json")
-                .BuildHexagonWithAdaptersButWithoutIOs();
+                .BuildImperativeShellWithAdaptersButWithoutIOs();
 
             // ACT
             var response = await leftSideAdapter.GetSuggestionsFor(showId, partyRequested);
@@ -67,9 +67,9 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             const string showId = "18";
             const int partyRequested = 1;
 
-            var leftSideAdapter = new HexagonBuilder()
+            var leftSideAdapter = new ImperativeShellBuilder()
                 .WithAuditoriumDefinedForShow(showId, "18-New Amsterdam-(6)(0)_theater.json", "18-New Amsterdam-(6)(0)_booked_seats.json")
-                .BuildHexagonWithAdaptersButWithoutIOs();
+                .BuildImperativeShellWithAdaptersButWithoutIOs();
 
             // ACT
             var response = await leftSideAdapter.GetSuggestionsFor(showId, partyRequested);
@@ -88,9 +88,9 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             const string showId = "9";
             const int partyRequested = 1;
 
-            var leftSideAdapter = new HexagonBuilder()
+            var leftSideAdapter = new ImperativeShellBuilder()
                 .WithAuditoriumDefinedForShow(showId, "9-Mogador Theater-(2)(0)_theater.json", "9-Mogador Theater-(2)(0)_booked_seats.json")
-                .BuildHexagonWithAdaptersButWithoutIOs();
+                .BuildImperativeShellWithAdaptersButWithoutIOs();
 
             // ACT
             var response = await leftSideAdapter.GetSuggestionsFor(showId, partyRequested);
@@ -106,9 +106,9 @@ namespace SeatsSuggestions.Tests.AcceptanceTests
             const string showId = "3";
             const int partyRequested = 4;
 
-            var leftSideAdapter = new HexagonBuilder()
+            var leftSideAdapter = new ImperativeShellBuilder()
                 .WithAuditoriumDefinedForShow(showId, "3-Dock Street Theater-(6)(0)_theater.json", "3-Dock Street Theater-(6)(0)_booked_seats.json")
-                .BuildHexagonWithAdaptersButWithoutIOs();
+                .BuildImperativeShellWithAdaptersButWithoutIOs();
 
             // ACT
             var response = await leftSideAdapter.GetSuggestionsFor(showId, partyRequested);

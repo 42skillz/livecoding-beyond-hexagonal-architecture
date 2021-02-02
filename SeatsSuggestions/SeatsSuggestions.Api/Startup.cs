@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Converters;
-using SeatsSuggestions.Domain;
 using SeatsSuggestions.Domain.Ports;
 using SeatsSuggestions.Infra;
 using SeatsSuggestions.Infra.Adapter;
@@ -37,7 +36,7 @@ namespace SeatsSuggestions.Api
 
             services.AddVersioning();
 
-            ConfigurePortsAndAdapters(services);
+            ConfigureRightSidePortsAndAdapters(services);
 
             var openApiContact = new OpenApiContact
             {
@@ -54,7 +53,7 @@ namespace SeatsSuggestions.Api
             services.AddSwaggerGeneration(openApiContact, swaggerTitle, GetType());
         }
 
-        private static void ConfigurePortsAndAdapters(IServiceCollection services)
+        private static void ConfigureRightSidePortsAndAdapters(IServiceCollection services)
         {
             // The 3 steps initialization of the Hexagonal Architecture  -------------------------------------------------------------------
             
