@@ -1,40 +1,45 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using SeatsSuggestions.Domain;
 using SeatsSuggestions.Domain.Ports;
+
 #pragma warning disable 1591
 
 namespace SeatsSuggestions.Api.Controllers
 {
     /// <summary>
-    /// Web controller acting as a left-side Adapter of a Hexagonal Architecture.
+    ///     Web controller acting as a left-side Adapter of a Hexagonal Architecture.
     /// </summary>
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class SeatsSuggestionsController : ControllerBase
     {
-        private readonly IRequestSuggestions _hexagon;
+        private readonly IProvideUpToDateAuditoriumSeating _auditoriumSeatingProvider;
 
-        public SeatsSuggestionsController(IRequestSuggestions hexagon)
+        public SeatsSuggestionsController(IProvideUpToDateAuditoriumSeating auditoriumSeatingProvider)
         {
-            _hexagon = hexagon;
+            _auditoriumSeatingProvider = auditoriumSeatingProvider;
         }
 
         // GET api/SeatsSuggestions?showId=5&party=3
         [HttpGet]
         public async Task<IActionResult> GetSuggestionsFor([FromQuery(Name = "showId")] string showId, [FromQuery(Name = "party")] int party)
-        {           
+        {
+            // Imperative shell for this use case -------------------------------
+
             // Infra => Domain
             var id = new ShowId(showId);
             var partyRequested = new PartyRequested(party);
 
-            // Call the Domain
-            var suggestions = await _hexagon.MakeSuggestions(id, partyRequested);
+            // non-pure function
+            var auditoriumSeating = await _auditoriumSeatingProvider.GetAuditoriumSeating(id);
+
+            // pure function (the core)
+            var suggestions = SeatAllocator.MakeSuggestions(id, partyRequested, auditoriumSeating);
 
             // Domain => Infra
-            return new OkObjectResult(suggestions/*JsonConvert.SerializeObject(suggestions, Formatting.Indented)*/);
+            return new OkObjectResult(suggestions /*JsonConvert.SerializeObject(suggestions, Formatting.Indented)*/);
         }
     }
 }

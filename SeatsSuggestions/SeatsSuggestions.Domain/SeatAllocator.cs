@@ -1,21 +1,16 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using SeatsSuggestions.Domain.Ports;
 
 namespace SeatsSuggestions.Domain
 {
     /// <summary>
-    ///     The Hexagon.
+    ///     The functional core.
     /// </summary>
-    public class SeatAllocator : IRequestSuggestions
+    public static class SeatAllocator
     {
         private const int NumberOfSuggestionsPerPricingCategory = 3;
-        private readonly IProvideUpToDateAuditoriumSeating _auditoriumSeatingProvider;
 
-        public async Task<SuggestionsMade> MakeSuggestions(ShowId showId, PartyRequested partyRequested)
+        public static SuggestionsMade MakeSuggestions(ShowId showId, PartyRequested partyRequested, AuditoriumSeating auditoriumSeating)
         {
-            var auditoriumSeating = await _auditoriumSeatingProvider.GetAuditoriumSeating(showId);
-
             var suggestionsMade = new SuggestionsMade(showId, partyRequested);
 
             suggestionsMade.Add(GiveMeSuggestionsFor(auditoriumSeating, partyRequested, PricingCategory.First));
@@ -23,17 +18,9 @@ namespace SeatsSuggestions.Domain
             suggestionsMade.Add(GiveMeSuggestionsFor(auditoriumSeating, partyRequested, PricingCategory.Third));
             suggestionsMade.Add(GiveMeSuggestionsFor(auditoriumSeating, partyRequested, PricingCategory.Mixed));
 
-            if (suggestionsMade.MatchExpectations())
-            {
-                return suggestionsMade;
-            }
+            if (suggestionsMade.MatchExpectations()) return suggestionsMade;
 
             return new SuggestionNotAvailable(showId, partyRequested);
-        }
-
-        public SeatAllocator(IProvideUpToDateAuditoriumSeating auditoriumSeatingProvider)
-        {
-            _auditoriumSeatingProvider = auditoriumSeatingProvider;
         }
 
         private static IEnumerable<SuggestionMade> GiveMeSuggestionsFor(AuditoriumSeating auditoriumSeating, PartyRequested partyRequested, PricingCategory pricingCategory)

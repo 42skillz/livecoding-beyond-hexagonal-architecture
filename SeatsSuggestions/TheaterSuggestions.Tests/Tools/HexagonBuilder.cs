@@ -35,11 +35,8 @@ namespace SeatsSuggestions.Tests.Tools
             // Instantiate the Right-side adapter
             var rightSideAdapter = InstantiateRightSideAdapter(_showId, _theaterJson, _theaterBookedSeatsJson);
 
-            // Give this right-side Adapter to the hexagon
-            var hexagon = new SeatAllocator(rightSideAdapter);
-            
             // Instantiate the Left-side adapter
-            var leftSideAdapter = new SeatsSuggestionsController(hexagon);
+            var leftSideAdapter = new SeatsSuggestionsController(rightSideAdapter);
 
             return leftSideAdapter;
         }

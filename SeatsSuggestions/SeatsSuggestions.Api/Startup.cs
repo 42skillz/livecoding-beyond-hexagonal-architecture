@@ -74,14 +74,6 @@ namespace SeatsSuggestions.Api
 
             // Now, the right-side adapter for the IProvideUpToDateAuditoriumSeating right-side port)
             services.AddScoped<IProvideUpToDateAuditoriumSeating, AuditoriumSeatingAdapter>();
-
-
-            // Step2: Allows the hexagon instantiations (will be used by the left-side adapters. i.e.: some web controllers) -----------------
-            services.AddScoped<IRequestSuggestions, SeatAllocator>();
-            
-            // Step3: Instantiate the "I want to go in" (i.e. left-side) adapters ------------------------------------------------------------
-            // ... actually, this will be done every time the Left Adapter (SeatsSuggestionsController) will be instantiated by ASP.NET
-            // It will receive an instance of the Hexagon (i.e. a SeatAllocator instance)
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
