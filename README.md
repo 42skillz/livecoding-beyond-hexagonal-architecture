@@ -3,6 +3,8 @@ The support of our live coding session (made at __[Virtual DDD](https://twitter.
 
 Thanks to __[Kenny](https://twitter.com/kenny_baas/)__ & __[Krisztina](https://twitter.com/YellowBrickC/)__ for their warm welcome!
 
+If you have questions or ideas to share, you can reach us on twitter (__[Thomas (aka. use case driven)](https://twitter.com/tpierrain)__ and __[Bruno](https://twitter.com/brunoboucard)__).
+
 ![Beyond](./Beyond.JPG)
 
 ## All slides are available here:
