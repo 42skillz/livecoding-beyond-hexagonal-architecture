@@ -1,7 +1,10 @@
 ﻿using ExternalDependencies;
 using SeatsSuggestions.Api.Controllers;
+using SeatsSuggestions.Domain;
 using SeatsSuggestions.Infra;
 using SeatsSuggestions.Infra.Adapter;
+using System;
+using System.Threading.Tasks;
 
 namespace SeatsSuggestions.Tests.Tools
 {
@@ -32,8 +35,16 @@ namespace SeatsSuggestions.Tests.Tools
             // Instantiate the Right-side adapter
             var rightSideAdapter = InstantiateRightSideAdapter(_showId, _theaterJson, _theaterBookedSeatsJson);
 
+            // create impure imperative shell by partially applying the provide function in the core.
+            Func<ShowId, PartyRequested, Task<SuggestionsMade>> suggestionsDelegate = (id, party) => SeatAllocator.MakeSuggestionsImperativeShell(rightSideAdapter, id, party);
+
             // Instantiate the Left-side adapter
-            var leftSideAdapter = new SeatsSuggestionsController(rightSideAdapter);
+            var leftSideAdapter = new SeatsSuggestionsController(suggestionsDelegate);
+
+            // Balance restored : Underlying hexagon (essentially the 'main' module) knows how to assemble adapters to core but nothing else
+            
+            // Note: 
+            // - iso injecting the functions into the controller and rightside adapters, these could also be injected by creting more partially applied functions YMMV
 
             return leftSideAdapter;
         }

@@ -6,7 +6,7 @@
     <members>
         <member name="T:SeatsSuggestions.Api.Controllers.SeatsSuggestionsController">
             <summary>
-                Web controller acting as a left-side Adapter of a Hexagonal Architecture.
+                Web controller acting as the Imperative Shell for our Suggestions use case.
             </summary>
         </member>
         <member name="T:SeatsSuggestions.Api.ServiceCollectionExtension">

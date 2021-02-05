@@ -1,6 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SeatsSuggestions.Domain;
+using SeatsSuggestions.Domain.Helper;
 using SeatsSuggestions.Domain.Ports;
 
 #pragma warning disable 1591
@@ -15,11 +17,11 @@ namespace SeatsSuggestions.Api.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class SeatsSuggestionsController : ControllerBase
     {
-        private readonly IProvideUpToDateAuditoriumSeating _auditoriumSeatingProvider;
+        private readonly Func<ShowId, PartyRequested, Task<SuggestionsMade>> _suggestionsDelegate;
 
-        public SeatsSuggestionsController(IProvideUpToDateAuditoriumSeating auditoriumSeatingProvider)
+        public SeatsSuggestionsController(Func<ShowId, PartyRequested, Task<SuggestionsMade>> suggestionDelegate)
         {
-            _auditoriumSeatingProvider = auditoriumSeatingProvider;
+            _suggestionsDelegate = suggestionDelegate;
         }
 
         // GET api/SeatsSuggestions?showId=5&party=3
@@ -32,13 +34,9 @@ namespace SeatsSuggestions.Api.Controllers
             var id = new ShowId(showId);
             var partyRequested = new PartyRequested(party);
 
-            // non-pure function
-            var auditoriumSeating = await _auditoriumSeatingProvider.GetAuditoriumSeating(id);
-
-            // pure function (the core)
-            var suggestions = SeatAllocator
-                .TryMakeSuggestions(id, partyRequested, auditoriumSeating)
-                    .GetValueOrFallback(new SuggestionNotAvailable(id, partyRequested));
+            // Call curried imperative shell
+            // Balance restored : Adapter no longer needs to know other adapters, only uses the domain core
+            var suggestions = await _suggestionsDelegate(id, partyRequested);
 
             // Domain => Infra
             return new OkObjectResult(suggestions /*JsonConvert.SerializeObject(suggestions, Formatting.Indented)*/);
