@@ -11,6 +11,8 @@ namespace SeatsSuggestions.Domain
     {
         private const int NumberOfSuggestionsPerPricingCategory = 3;
 
+        public delegate Task<SuggestionsMade> SuggestionsDelegate(ShowId id, PartyRequested party);
+
         public async static Task<SuggestionsMade> MakeSuggestionsImperativeShell(Ports.IProvideUpToDateAuditoriumSeating auditoriumSeatingProvider, ShowId id, PartyRequested partyRequested)
         {
             // non-pure function

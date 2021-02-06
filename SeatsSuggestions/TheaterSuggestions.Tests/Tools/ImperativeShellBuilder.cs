@@ -36,7 +36,7 @@ namespace SeatsSuggestions.Tests.Tools
             var rightSideAdapter = InstantiateRightSideAdapter(_showId, _theaterJson, _theaterBookedSeatsJson);
 
             // create impure imperative shell by partially applying the provide function in the core.
-            Func<ShowId, PartyRequested, Task<SuggestionsMade>> suggestionsDelegate = (id, party) => SeatAllocator.MakeSuggestionsImperativeShell(rightSideAdapter, id, party);
+            SeatAllocator.SuggestionsDelegate suggestionsDelegate = (id, party) => SeatAllocator.MakeSuggestionsImperativeShell(rightSideAdapter, id, party);
 
             // Instantiate the Left-side adapter
             var leftSideAdapter = new SeatsSuggestionsController(suggestionsDelegate);

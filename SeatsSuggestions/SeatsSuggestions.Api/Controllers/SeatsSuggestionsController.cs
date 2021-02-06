@@ -17,9 +17,9 @@ namespace SeatsSuggestions.Api.Controllers
     [Route("api/v{version:apiVersion}/[controller]")]
     public class SeatsSuggestionsController : ControllerBase
     {
-        private readonly Func<ShowId, PartyRequested, Task<SuggestionsMade>> _suggestionsDelegate;
+        private readonly SeatAllocator.SuggestionsDelegate _suggestionsDelegate;
 
-        public SeatsSuggestionsController(Func<ShowId, PartyRequested, Task<SuggestionsMade>> suggestionDelegate)
+        public SeatsSuggestionsController(SeatAllocator.SuggestionsDelegate suggestionDelegate)
         {
             _suggestionsDelegate = suggestionDelegate;
         }
